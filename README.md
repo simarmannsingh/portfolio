@@ -1,6 +1,6 @@
 ## About 
 
-![Portfolio snapshot](https://github.com/simarmannsingh/portfolio/blob/master/portfolio-widescreen.png)
+![Portfolio snapshot](https://github.com/simarmannsingh/portfolio/blob/master/images/portfolio-widescreen.png)
 
 This is a public repository for the online portfolio, which is created using purely HTML and CSS. A future version of this in Reactjs is also planned.
 

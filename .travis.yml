@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "node"
+
+after_success:
+  - git config --global user.name "simarmannsingh"
+  - git config --global user.email "simarmannsingh@gmail.com"
+  - git remote rm origin
+  - git remote add origin https://simarmannsingh:${GITHUB_TOKEN}@github.com/simarmannsingh/portfolio.git
+  - npm run deploy
