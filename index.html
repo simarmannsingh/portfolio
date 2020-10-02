@@ -17,8 +17,12 @@
     
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+     <!-- FontAwesome icon pack's CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" 
+        integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
   </head>
-  
+
   <body>
 
     <section class="sec1">
@@ -42,7 +46,7 @@
 
             <div class="left-column"> 
                 <img id="profpic" src="./images/LinkedIn.jpg" alt="profile pic">
-                <h5 style="text-align: center; padding: 20px;"> Personalize themes</h5>
+                <h5 style="text-align: center; padding: 20px;"> Personalize your themes</h5>
 
                 <div id="themes">
                     <div data-mode="light" id="light-theme" class="theme-dots"></div>
@@ -55,17 +59,18 @@
             </div>
 
             <div class="right-column">
-
-                <div id="preview-shadow">
-                    <div id="preview">
-                        <div id="corner1" class="corners"></div>
-                        <div id="corner2" class="corners"></div>
-                        
-                        <h4>What I do</h4>
-                        <p>I am an aspiring Web Developer who likes to explore new technologies everyday.</p>
-    
-                        <div id="corner3" class="corners"></div>
-                        <div id="corner4" class="corners"></div>
+                <div class="right-child">
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner1" class="corners"></div>
+                            <div id="corner2" class="corners"></div>
+                            
+                            <h5>What I do?</h5>
+                            <p>I am an aspiring Web Developer who likes to explore new technologies.</p>
+        
+                            <div id="corner3" class="corners"></div>
+                            <div id="corner4" class="corners"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,23 +83,19 @@
       <div class="main-container">
         <div class="about-wrapper">
             <div class="about-me">
+                <h4>About Me</h4>
+                <p>I am a recent Master graduate, currently looking for a junior Web Developer position. In my last internship at BMW, I worked on different web-technologies and gained some experience in HTML, CSS, Javascript, JQuery, PL/SQL along with many tools that were required for the daily tasks like Git, Jira, Confluence etc. </p>
+                <p>In my Master thesis, I designed a Graphical User Interface (GUI) to display radar data to the user. I programmed the GUI using C++ along with OpenGL and many other third party libraries such as FreeType, LwIP, Winsock etc. My design skillset also include Adobe Illustrator, Adobe Photoshop, Adobe After Effects, Adobe Premiere pro, Maxon Cinema 4D and Camtasia Studio. I prefer to design my own illustrations in Adobe Illustrator CS6.</p>
+                <p>I also use services like Figma, unDraw, unSplash and picsum.photos for my projects as all these services offer affordable and licence-free material / service which I can afford at the moment. </p>
+                <p>In past, I've also worked on projects using C++, OpenGL, Oracle-Apex, MATLAB, Wireshark etc. 
+                    <br><br>
+                    <a target="_blank" style="font-weight: 900;" href="./SimarMann_lebenslauf.pdf">Download resume</a>
+                </p>
+            </div>
 
-                    <h4>About Me</h4>
-                    <p>I am a recent Master graduate, looking for a junior position as a Frontend Developer. In my last internship with BMW, I worked on web-technologies and gained valuable experience in HTML, CSS, Javascript, JQuery, PL/SQL along with many tools that were required for the daily tasks like Git, Jira, Confluence, CI/CD etc. </p>
-                    <p>In my Master thesis, I designed a Graphical User Interface (GUI) in C++ using OpenGL and many other third party libraries. My design skillset also include Adobe Illustrator, Adobe Photoshop, Adobe After Effects, Adobe Premiere pro, Cinema 4D and Camtasia Studio. I design my own illustrations in Adobe Illustrator CS6.</p>
-                    <p>I also use services like Figma, unDraw, unSplash and picsum.photos for my projects as all these services offer affordable and licence-free material/service which I can afford. </p>
-                    <p>In past, I've also worked on projects using C++, OpenGL, Oracle-Apex, MATLAB, Wireshark etc. 
-                        <br><br>
-                        <a target="_blank" href="./SimarMann_lebenslauf.pdf">Download resume</a>
-                    </p>
-
-                
-
-                <hr>
-
-                <h4>Top Expertise</h4>           
-
-                <div id="skills"> 
+            <div class="skill-wrapper">
+                <h4>Top Expertise</h4>            
+                <div class="skills"> 
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -115,15 +116,15 @@
                         <li>After Effects</li>
                         <li>Premiere Pro</li>
                     </ul>
-
                 </div>
             </div>
+            
 
             <div class="social-links">
-                <h3 class="social">Visit my <a style="color: var(--mainText); text-decoration: underline;" target="_blank" href="https://simarmannsingh.de">website</a></h3>
-                <img src="./images/preview.png" class="card-img" alt="">                
+                <h3 class="social">Visit my <a target="_blank" href="https://simarmannsingh.de">Website</a></h3>
+                <img src="./images/preview.png" class="website" alt="">                
                 <a class="social" target="_blank" href="https://www.linkedin.com/in/simarmannsingh/">LinkedIn @simarmannsingh</a>
-                <a target="_blank" href="https://twitter.com/simarmannsingh/">Twitter @simarmannsingh</a>
+                <a class="social" target="_blank" href="https://twitter.com/simarmannsingh/">Twitter @simarmannsingh</a>
             </div>
 
         </div>
@@ -134,45 +135,57 @@
 
     <section class="sec1">      
         <div class="main-container" > 
-            <h2 style="text-align: center; padding: 30px;"> Some of my previous projects</h2>
+            <h2> Some of my previous projects</h2>
 
             <div class="post-wrapper">
 
                 <div class="cards">
                     <div class="container">
-                        <h4 style="padding: 7px;">E-commerce</h4>
+                        <h4>Freelancing</h4>
+                        <img src="./images/wideScreen.png" class="card-img" alt="">
+                    </div>
+                    <a target="_blank" href="https://github.com/simarmannsingh/spacerocket" class="btn-primary btn cards-btn">Go to Website</a>
+                </div>
+
+                <div class="cards">
+                    <div class="container">
+                        <h4>E-commerce</h4>
                         <img src="./images/preview1.png" class="card-img" alt="">
                     </div>
-                    <a target="_blank" href="https://github.com/simarmannsingh/onlineshopping" class="btn-primary btn cards-btn">Checkout @Github</a>
+                    <a target="_blank" href="https://github.com/simarmannsingh/onlineshopping" class="btn-primary btn cards-btn">Go to Website</a>
                 </div>
 
                 <div class="cards">
                     <div class="container">
-                        <h4 style="padding: 7px;">Music App</h4>
+                        <h4>Music App</h4>
                         <img src="./images/app-preview.png" class="card-img" alt="">
                     </div>
-                    <a target="_blank" href="https://github.com/simarmannsingh/Lorentzmusicplayer" class="btn-primary btn cards-btn">Checkout @Github</a>
+                    <a target="_blank" href="https://github.com/simarmannsingh/Lorentzmusicplayer" class="btn-primary btn cards-btn">Go to Website</a>
                 </div>
 
                 <div class="cards">
                     <div class="container">
-                        <h4 style="padding: 7px;">Museum Website</h4>
+                        <h4>Museum Website</h4>
                         <img src="./images/apex-preview2.png" class="card-img" alt="">
                     </div>
-                    <a target="_blank" href="https://apex.oracle.com/pls/apex/work_spree_capital/r/museum/" class="btn-primary btn cards-btn">Checkout @Github</a>
+                    <a target="_blank" href="https://apex.oracle.com/pls/apex/work_spree_capital/r/museum/" class="btn-primary btn cards-btn">Go to Website</a>
                 </div>
             </div>
 
         </div>      
-    </section>
+   </section>
 
 <!------------------------------------------------------------------------------->    
 
-    <!-- <section class="sec2">
-      <div class="main-container">
-        Contact
-      </div>
-    </section> -->
+<section class="sec1">
+    <div class="main-container" > 
+        <div class="footer">
+            <p> Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by Simar</p>            
+        </div>
+    </div>
+</section>
+
+<!------------------------------------------------------------------------------->    
 
     <script type="text/javascript" src="script.js"></script>
   </body>
