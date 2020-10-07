@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, strong {
   font-family: Helvetica;
 }
 
-p, li, span, label, input, textarea {
+p, li, span, label, input, textarea, p > a {
   color: var(--secondaryText);
   font-family: Helvetica;
 }
@@ -447,6 +447,11 @@ h6 { font-size: 16px;} */
 
 @media screen and (min-width: 1200px) {  
 
+.main-container{    
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
+
 .intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -496,6 +501,12 @@ h6 { font-size: 16px;} */
 /*========================================================================*/
 
 @media screen and (min-width: 1600px) {
+
+    .main-container{    
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+
     .card-img{        
         font-size: 1.2em !important;
    }
