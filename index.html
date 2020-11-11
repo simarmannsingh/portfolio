@@ -6,7 +6,7 @@
     <title>Simar Mann Singh</title>    
     
     <!-- Adding CSS stylesheets -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
 
     <!-- Linking favicon for various sizes -->
@@ -87,7 +87,7 @@
                 <p>I am currently looking for positions like Junior Web Frontend / Full stack Developer positions. In my last internship at BMW, I worked on different web-technologies and gained some experience in HTML, CSS, Javascript, JQuery, PL/SQL along with many tools that were required for the daily tasks like Git, Jira, Confluence etc. I wish to learn more and hone my skills even further.</p>
                 <p>In my Master thesis, I designed a Graphical User Interface (GUI) to display radar data to the user. I programmed the GUI using C++ along with OpenGL and many other third party libraries such as FreeType, LwIP, Winsock etc. My design skillset includes Adobe Illustrator, Adobe Photoshop, Adobe After Effects, Adobe Premiere pro, Maxon Cinema 4D and Camtasia Studio.</p>
                 <p>I often use services like Figma, unDraw, unSplash and picsum.photos for my projects as all these services offer affordable and licence-free material / service which I can afford at the moment. </p>
-                <a target="_blank" style="font-weight: 900;" href="./SimarMann-lebenslauf.pdf">Download resume</a>
+                <a target="_blank" style="font-weight: 900;" href="./SimarMann_Lebenslauf.pdf">Download resume</a>
                 
             </div>
 
@@ -138,39 +138,40 @@
         <div class="main-container" > 
             <h2> Some of my previous projects</h2>
 
+            <div class="carousel">
+                <button class="carousel_btn carousel_btn-left is_hidden">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="carousel_container">
+                    <ul class="carousel_track">
+                        <li class="carousel_slide current_slide">
+                            <img class="carousel_image" src="images/image1.png" alt="" srcset="">
+                        </li>
+                        <li class="carousel_slide">
+                            <img class="carousel_image" src="images/image2.png" alt="" srcset="">
+                        </li>
+                        <li class="carousel_slide">
+                            <img class="carousel_image" src="images/image3.png" alt="" srcset="">
+                        </li>
+                    </ul>
+                </div>
+                
+                <button class="carousel_btn carousel_btn-right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="carousel_nav">
+                    <button class="carousel_indicator current_slide"></button>
+                    <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
+                </div>
+            </div>
+
             <div class="post-wrapper">
 
-                <div class="cards">
-                    <div class="container">
-                        <h4>Freelancing</h4>
-                        <img src="./images/wideScreen.png" class="card-img" alt="">
-                    </div>
-                    <a target="_blank" href="https://github.com/simarmannsingh/spacerocket" class="btn-primary btn cards-btn">Go to Website</a>
-                </div>
-
-                <div class="cards">
-                    <div class="container">
-                        <h4>E-commerce</h4>
-                        <img src="./images/preview1.png" class="card-img" alt="">
-                    </div>
-                    <a target="_blank" href="https://github.com/simarmannsingh/onlineshopping" class="btn-primary btn cards-btn">Go to Website</a>
-                </div>
-
-                <div class="cards">
-                    <div class="container">
-                        <h4>Music App</h4>
-                        <img src="./images/app-preview.png" class="card-img" alt="">
-                    </div>
-                    <a target="_blank" href="https://github.com/simarmannsingh/Lorentzmusicplayer" class="btn-primary btn cards-btn">Go to Website</a>
-                </div>
-
-                <div class="cards">
-                    <div class="container">
-                        <h4>Museum Website</h4>
-                        <img src="./images/apex-preview2.png" class="card-img" alt="">
-                    </div>
-                    <a target="_blank" href="https://apex.oracle.com/pls/apex/work_spree_capital/r/museum/" class="btn-primary btn cards-btn">Go to Website</a>
-                </div>
+                
             </div>
 
         </div>      
