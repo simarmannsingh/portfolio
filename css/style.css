@@ -13,7 +13,7 @@
 	--previewShadow:#111921;
 
 	--buttonColor:#17a2b8;
-
+    --projectCard:#164D56;
 }
 
 html, body {
@@ -23,7 +23,7 @@ html, body {
 }
 
 body *{
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -58,6 +58,10 @@ h6 { font-size: 16px;} */
 
 .sec2 {
     background-color: var(--secondaryColor);  
+}
+
+.sec_heading{
+    margin-top: 1em;
 }
 
 .main-container {
@@ -216,6 +220,10 @@ h6 { font-size: 16px;} */
     position: relative;
 }
 
+#preview h5{    
+    padding: 0;
+}
+
 #preview p{
     font-size: 0.9em;
 }
@@ -240,13 +248,13 @@ h6 { font-size: 16px;} */
     flex-direction: column;    
 }
 
-.about-me{        
+.about-me, .future-tech{        
     text-align: justify;
     text-align-last: left;
     padding: 1em;
 }
 
-.about-me p{
+.about-me p, .future-tech p{
     font-size: 0.9em;
 }
 
@@ -318,8 +326,7 @@ h6 { font-size: 16px;} */
  
 .card-img{            
     width: 100%;
-    height: 12em;
-      
+    height: 12em;      
  }
 
 .cards-btn{
@@ -329,52 +336,168 @@ h6 { font-size: 16px;} */
     border-radius: 0 !important;
     width: 91%;
 }
-  .cards:hover {
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
-    background-color: var(--previewShadow);    
-  }
-
-  .container {
-    padding: 12px;
-    text-align: center;    
-  }
-
-
-  .dogo{
-      display: block;
-      height: fit-content;
-      width: 100%;
-  }
-
-.footer{
-    padding: 0.5em;
-    margin: 0;
-    display: flex;
-    font-size: 0.7em;
+.cards:hover {
+box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+background-color: var(--previewShadow);    
 }
 
+.container {
+padding: 12px;
+text-align: center;    
+}
+
+
+.dogo{
+    display: block;
+    height: fit-content;
+    width: 100%;
+}
+
+.footer{    
+    display: flex;    
+    position: relative;    
+    width: 100%;
+    height: 180px;
+}
+.footer-color{
+    background: #3D3939;
+    padding: 1em;
+
+}
+.column, .footer_links{
+    display: flex;
+    list-style: none;
+}
+
+.footer_links{
+    display: flex;
+    width: 80%;    
+    height: 100%;
+    justify-content: space-around;
+    
+}
+.column{
+    flex-direction: column;
+    padding: 2em;
+}
+.column a{          color: var(--secondaryText);    }
+.column a:hover{    color: var(--mainText);    }
+
+.contact_links, .social_media_links{    
+    height: 100%;
+}
+.contact_links{  width: 80%;  }
+.social_media_links{  
+    width: 35%;
+    display: flex;    
+    align-items: center;    
+}
+
+.social_media_links i{
+    font-size: 2.5em;
+    padding: 0.2em;
+    color: var(--secondaryText);
+}
 
 /* -------------------------------------- */
 
 .carousel {
     position: relative;
-    height: 600px;
-    width: 80%;
+    height: 450px;
+    width: 85%;
     margin: 0 auto;
 }
 
-.carousel_image{
+
+.carousel_card {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    display: flex;
+    position: relative;
+    /* border-radius: 15px; */    
+}
+.carousel_card.card{
+    background-color: var(--projectCard);
+}
+.left, .right{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.left { left: 0; }
+.right { 
+    right: 0; 
+    padding: 1em 0;
+}
+
+.carousel_image{
+    width: 400px;
+    height: auto;
+    justify-content: center;
+    margin: auto 16px;
+    border: 1px solid #F2F2F2;
+    /* position: absolute; */
+    /* object-fit: cover; */
+}
+
+.carousel_link{
+    height: 60px;
+    line-height: 60px;
+    width: 400px;
+    background-color: #0b76b4;
+    color: white;
+    margin-left: 16px;
+    margin-top: 4px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 400;
+    border: 1px solid #F2F2F2;
+    text-decoration: none;
+    text-align: center;    
+}
+.carousel_link:hover{
+    background-color: #0F92DC;
+    text-decoration: none;
+    color: white;
+}
+
+.carousel_link:focus{
+    outline: none;
+}
+
+.class_title h1{
+    /* margin: auto; */
+    margin-top: 0.6em;
+    font-size: 1.4em;
+    margin-bottom: 0;
+    color: var(--secondaryText);
+}
+.card_paragraph{
+    font-size: 0.8em;
+    padding-right: 2.5em;
+    padding-left: 0;
+    text-align: justify;
+}
+
+.tech-used{
+    font-size: 1.5em;
+    color: var(--secondaryText);
+}
+.tech-used i{
+    margin-right:0.3em;
 }
 
 .carousel_container{
-    background: lightgreen;
+    /* background: lightgreen; */
     overflow: hidden;
-    height: 100%;
+    height: 80%;
     position: relative;
-
+    /* border-radius: 15px; */
 }
 
 .carousel_track{
@@ -395,7 +518,7 @@ h6 { font-size: 16px;} */
 
 .carousel_btn{
     position: absolute;
-    top: 50%;
+    top: 42%;
     transform: translateY(-50%);
     cursor: pointer;
     background: transparent;    
@@ -403,24 +526,29 @@ h6 { font-size: 16px;} */
 }
 
 .carousel_btn i{
-    width: 15px;
+    width: 1.8em;
+    font-size: 1.8em;
+    color: var(--secondaryText);
+}
+
+.carousel_btn i:hover{
     color: white;
 }
 
 .carousel_btn-left{
-    left: -50px;
+    left: -6em;
 }
 
 .carousel_btn-right{
-    right: -50px;
+    right: -6em;
 }
 
 .carousel_nav{
-     /* background: pink; */
-     display: flex;
-     justify-content: center;
-     padding: 6px;
-    }
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+    margin: 1em;
+}
     
 
 .carousel_indicator{
@@ -428,17 +556,31 @@ h6 { font-size: 16px;} */
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    background: rgba(0, 0, 0, .3);
+    background: var(--borderColor);
+    opacity: 1;
     margin: 0 7px;
 }
 
-.carousel_indicator.current_slide{
-    background: rgba(0, 0, 0, .75);
+.carousel_indicator.current_slide{    
+    background: var(--secondaryText);
+    opacity: 0.7;
 }
 
 .is_hidden {
     display: none;
 }
+
+.carousel_indicator:focus,
+.carousel_btn:focus{
+    outline: none;
+}
+
+.copyright{
+    font-size: 0.6em;
+    display: flex;
+    justify-content: center;
+}
+
 /*========================================================================*/
 /*------------------------   Max-Screeen-Size : 320px     ----------------*/
 /*========================================================================*/
@@ -587,7 +729,8 @@ h6 { font-size: 16px;} */
 
 @media screen and (min-width: 1600px) {
 
-    .main-container{    
+    .main-container{
+        min-width: 1360px;
         padding-left: 8em;
         padding-right: 8em;
     }

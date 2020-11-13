@@ -83,16 +83,17 @@
       <div class="main-container">
         <div class="about-wrapper">
             <div class="about-me">
-                <h4>About Me</h4>
-                <p>I am currently looking for positions like Junior Web Frontend / Full stack Developer positions. In my last internship at BMW, I worked on different web-technologies and gained some experience in HTML, CSS, Javascript, JQuery, PL/SQL along with many tools that were required for the daily tasks like Git, Jira, Confluence etc. I wish to learn more and hone my skills even further.</p>
+                <h4 class="sec_heading">About Me</h4>
+                <p>I am looking for positions like Junior Web Frontend / Full stack Developer positions. In my last internship at BMW, I worked on different web-technologies and gained some experience in HTML, CSS, Javascript, PL/SQL along with many tools that were required for the daily tasks like Git, Jira, Confluence etc. I wish to learn more and hone my skills even further.</p>
                 <p>In my Master thesis, I designed a Graphical User Interface (GUI) to display radar data to the user. I programmed the GUI using C++ along with OpenGL and many other third party libraries such as FreeType, LwIP, Winsock etc. My design skillset includes Adobe Illustrator, Adobe Photoshop, Adobe After Effects, Adobe Premiere pro, Maxon Cinema 4D and Camtasia Studio.</p>
-                <p>I often use services like Figma, unDraw, unSplash and picsum.photos for my projects as all these services offer affordable and licence-free material / service which I can afford at the moment. </p>
+                <p>I use services like Figma, unDraw, unSplash and picsum.photos for my projects as all these services offer affordable and licence-free material / service.</p>
+                
                 <a target="_blank" style="font-weight: 900;" href="./SimarMann_Lebenslauf.pdf">Download resume</a>
                 
             </div>
 
             <div class="skill-wrapper">
-                <h4>Top Expertise</h4>            
+                <h4 class="sec_heading">Top Expertise</h4>            
                 <div class="skills"> 
                     <ul>
                         <li>HTML</li>
@@ -126,6 +127,22 @@
                 <img src="./images/preview.png" class="website" alt="">                
                 <a class="social" target="_blank" href="https://www.linkedin.com/in/simarmannsingh/">LinkedIn @simarmannsingh</a>
                 <a class="social" target="_blank" href="https://twitter.com/simarmannsingh/">Twitter @simarmannsingh</a>
+                <div class="future-tech">
+                    <h4 class="sec_heading">Future Skills</h4>
+                    <p>The technologies I wish to work on and develop my career includes, but not limited to...(the list is not exhaustive, rather it represents only a fraction. Only these few .svgs I could find on Fontawesome.)</p>
+                    <div class="tech-used">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3"></i>
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-node-js"></i>
+                        <i class="fab fa-python"></i>
+                        <i class="fab fa-java"></i>
+                        <i class="fab fa-ubuntu"></i>
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <p>and so on...</p>
+                </div>
             </div>
 
         </div>
@@ -133,10 +150,10 @@
     </section>
 
 <!------------------------------------------------------------------------------->
-
+    <!-- Note: Keep the number of Sliding cards and the navigation dots same -->
     <section class="sec1">      
         <div class="main-container" > 
-            <h2> Some of my previous projects</h2>
+            <h2 class="sec_heading"> Some of my previous projects</h2>
 
             <div class="carousel">
                 <button class="carousel_btn carousel_btn-left is_hidden">
@@ -145,14 +162,194 @@
                 
                 <div class="carousel_container">
                     <ul class="carousel_track">
+                        <!-- 1. -->
                         <li class="carousel_slide current_slide">
-                            <img class="carousel_image" src="images/image1.png" alt="" srcset="">
+                            <div class="carousel_card card">
+                                <div class="left">
+                                    <img class="carousel_image" src="images/image1.png" alt="" srcset="">
+                                    <a class="carousel_link" href="https://pnbafac.com/" target="_blank">Go to Website</a>
+                                </div>
+                                <div class="right">
+                                    <div class="class_title">
+                                        <h1>PNBAFAC: React based Website</h1>
+                                    </div>
+                                    
+                                    <div class="card_paragraph">
+                                        <p> A Reactjs based responsive Website designed for a Freelancing customer.The website is owned by a Traditional Folk Dance teacher who wanted to have web presence after the Pandamic forced the dance school to shut down.</p>
+                                        <p> The website is designed using Reactjs for frontend and Nodejs for backend. Also features tawk.to Instant chat feature to engage the website visitors. </p>
+                                    </div>
+
+                                    <div class="tech-used">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3"></i>
+                                        <i class="fab fa-js-square"></i>
+                                        <i class="fab fa-react"></i>
+                                        <i class="fab fa-node-js"></i>
+                                        <i class="fab fa-ubuntu"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
+
+                        <!-- 2 -->
                         <li class="carousel_slide">
-                            <img class="carousel_image" src="images/image2.png" alt="" srcset="">
+                            <div class="carousel_card card">
+                                <div class="left">
+                                    <img class="carousel_image" src="images/image2.png" alt="" srcset="">
+                                    <a class="carousel_link" href="https://github.com/simarmannsingh/onlineshopping" target="_blank">Go to Website</a>
+                                </div>
+                                <div class="right">
+                                    <div class="class_title">
+                                        <h1>Online Shopping</h1>
+                                    </div>
+                                    
+                                    <div class="card_paragraph">
+                                        <p>This is a MERN(MongoDB, Expressjs, Reactjs, Nodejs) based web application which mimics the E-commerce website functionalities. The application was created as a dummy project to learn different technologies.</p>
+                                        <p>The API can be tested using any REST API testing application like Postman following the API documentation.</p>
+                                    </div>
+
+                                    <div class="tech-used">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3"></i>
+                                        <i class="fab fa-js-square"></i>
+                                        <i class="fab fa-react"></i>
+                                        <i class="fab fa-node-js"></i>
+                                        <i class="fab fa-ubuntu"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
+
+                        <!-- 3 -->
                         <li class="carousel_slide">
-                            <img class="carousel_image" src="images/image3.png" alt="" srcset="">
+                            <div class="carousel_card card">
+                                <div class="left">
+                                    <img class="carousel_image" src="images/image3.png" alt="" srcset="">
+                                    <a class="carousel_link" href="https://github.com/simarmannsingh/Lorentzmusicplayer" target="_blank">Go to Website</a>
+                                </div>
+                                <div class="right">
+                                    <div class="class_title">
+                                        <h1>Lorentz Music Player</h1>
+                                    </div>
+
+                                    <div class="card_paragraph">
+                                        <p>This is a simple JS based online music player. Nothing fancy, just HTML file fetched by your computer, styled using CSS using which you can play songs, play/pause songs, play next or previous songs.</p>
+                                        <p>The Lorentz Music player also contains some .mp3 files which are to be used as test subjects, just to test the functionality. The application is not monetized and developer cannot be held responsible for the copyright issues of the .mp3 files. </p>
+                                    </div>
+                                    
+                                    <div class="tech-used">                                        
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3"></i>
+                                        <i class="fab fa-js-square"></i>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 4 -->
+                        <li class="carousel_slide">
+                            <div class="carousel_card card">
+                                <div class="left">
+                                    <img class="carousel_image" src="images/background.png" alt="" srcset="">
+                                    <a class="carousel_link" href="https://github.com/simarmannsingh/Kiel-canal" target="_blank">Go to Website</a>
+                                </div>
+                                <div class="right">
+                                    <div class="class_title">
+                                        <h1>KielCanal Game</h1>
+                                    </div>
+                                    
+                                    <div class="card_paragraph">
+                                       <p>This is an HTML based browser game created using the popular <a href="https://phaser.io/">Phaser.io</a> framework.  The game is created to showcase the significance and evolution of Kiel Canal and provides a brief overview of the operation and environment effect of ancient Kiel (Schleswig Holstein) waterways.</p>
+                                       <p>The ingredients includes 1 cup of HTML, CSS, Javascript each, 1/2 cup of Typescript along with 3 tablespoon of Phaser.io.</p>                            
+                                    </div>
+
+                                    <div class="tech-used">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3"></i>
+                                        <i class="fab fa-js-square"></i>                                        
+                                        <i class="fab fa-ubuntu"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- 5 -->
+                        <li class="carousel_slide">
+                            <div class="carousel_card card">
+                                <div class="left">
+                                    <img class="carousel_image" src="images/image5.png" alt="" srcset="">
+                                    <a class="carousel_link" href="https://simarmannsingh.github.io/landing-page/" target="_blank">Go to Website</a>
+                                </div>
+                                <div class="right">
+                                    <div class="class_title">
+                                        <h1>Landing Page Website</h1>
+                                    </div>
+                                    
+                                    <div class="card_paragraph">
+                                       <p>A fully responsive product description designed to demonstrate functionality. It can be modified to suit different needs. It has also been deployed on Netlify which also collects form data.</p>
+                                       <p>The landing page website contains multiple pages featuring modern minimalistic design. Visit the link for more details.</p>
+                                    </div>
+
+                                    <div class="tech-used">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3"></i>
+                                        <i class="fab fa-js-square"></i>                                        
+                                        <i class="fab fa-ubuntu"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- 6 -->
+                        <li class="carousel_slide">
+                            <div class="carousel_card card">
+                                <div class="left">
+                                    <img class="carousel_image" src="images/image6.png" alt="" srcset="">
+                                    <a class="carousel_link" href="https://github.com/simarmannsingh/email-subscription-page" target="_blank">Go to Website</a>
+                                </div>
+                                <div class="right">
+                                    <div class="class_title">
+                                        <h1>Email Subscription Form</h1>
+                                    </div>
+                                    
+                                    <div class="card_paragraph">
+                                       <p>This is a fully-responsive Email subscription Landing page. The form has frontend part in this repository. The backend can be added in a similar manner as the Repository which sends an email using NodeMailer.</p>
+                                       <p>You can enter your Name, surname and email and request to be added to the mailing list. As soon as you click the submit button, a request is made to send a confirmation email to the email address you provided using the NodeMailer package and ethereal fake email SMTP configuration.</p>                            
+                                    </div>
+
+                                    <div class="tech-used">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3"></i>
+                                        <i class="fab fa-js-square"></i>                                        
+                                        <i class="fab fa-ubuntu"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- 7 -->
+                        <li class="carousel_slide">
+                            <div class="carousel_card card">
+                                <div class="left">
+                                    <img class="carousel_image" src="images/image7.png" alt="" srcset="">
+                                    <a class="carousel_link" href="https://github.com/simarmannsingh/signupform" target="_blank">Go to Website</a>
+                                </div>
+                                <div class="right">
+                                    <div class="class_title">
+                                        <h1>Sign-Up Form</h1>
+                                    </div>
+                                    
+                                    <div class="card_paragraph">
+                                       <p>This is a fully-responsive Sign up and Sign in Form. The form can be connected to a real backend. The frontend is hosted on Github-Pages.</p>
+                                       <p>The form shift the screen in a fluid and swift manner from Sign up to Sign In screen and vice versa. It is created using HTML, CSS and JavaScript only.</p>
+                                    </div>
+
+                                    <div class="tech-used">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3"></i>
+                                        <i class="fab fa-js-square"></i>                                        
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -166,25 +363,60 @@
                     <button class="carousel_indicator"></button>
                     <button class="carousel_indicator"></button>
                     <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
                 </div>
             </div>
-
-            <div class="post-wrapper">
-
-                
-            </div>
-
         </div>      
    </section>
 
 <!------------------------------------------------------------------------------->    
 
-<section class="sec1">
-    <div class="main-container" > 
+<section class="sec2 footer-color">
+    <div class="main-container">
         <div class="footer">
-            <p> Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://github.com/simarmannsingh" style="text-decoration: underline;" target="_blank">Simar</a> </p>            
+            <div class="contact_links">
+                <ul class="footer_links">
+                    <li>
+                        <ul class="column">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="https://simarmannsingh.de/about.html">About</a></li>
+                            <li><a href="https://simarmannsingh.de">Blog posts</a></li>
+                            <li><a href="https://simarmannsingh.de/contact.html">Contacts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="column">
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie preferences</a></li>
+                            <li><a href="#">Page Configuration</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="column">
+                            <li><a href="#">Disclosure</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Customer Care</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="social_media_links">
+                <a href="https://github.com/simarmannsingh"><i class="fab fa-github-square" ></i></a>                
+                <a href="http://facebook.com/simarmannsingh"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/simarmannsingh"><i class="fab fa-twitter-square"></i></a>                
+                <a href="https://simarmannsingh.de/"><i class="fas fa-rss"></i></a>
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://github.com/simarmannsingh" style="text-decoration: underline;" target="_blank">Simar</a> </p>
         </div>
     </div>
+    
 </section>
 
 <!------------------------------------------------------------------------------->    
