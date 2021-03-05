@@ -23,13 +23,13 @@ html, body {
 }
 
 body *{
-	transition: 0.3s;
+	/* transition: 0.3s; */
 }
 
 h1, h2, h3, h4, h5, h6, strong {
   color: var(--mainText);
   font-family: Helvetica;
-  padding: 1em 0;  
+  padding: 1em 0;
 }
 
 p, li, span, label, input, textarea, p > a {
@@ -54,6 +54,7 @@ h6 { font-size: 16px;} */
     border-bottom: 1px solid var(--borderColor);
     width: 100%;
     overflow: hidden;
+    padding: 2em;
 }
 
 .sec2 {
@@ -65,13 +66,14 @@ h6 { font-size: 16px;} */
 }
 
 .main-container {
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1em;
+  /* background-color: red; */
 }
 
 .greetings{
@@ -106,14 +108,12 @@ h6 { font-size: 16px;} */
 }
 
 .left-column{
-    /* grid-area: left-column; */
     display: flex;
     flex-direction: column;    
     padding-top: 2em;
 }
 
 .right-column{
-    /* grid-area: right-column; */
     display: flex;
     align-content: center;
     padding-top: 3em;    
@@ -131,7 +131,7 @@ h6 { font-size: 16px;} */
 
 #themes{
     display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .theme-dots{
@@ -353,6 +353,41 @@ text-align: center;
     width: 100%;
 }
 
+.design1{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 5em;
+    margin-top: 0;
+    width: inherit;
+    gap: 4em 2em;
+}
+
+.design1 > div{
+    height: 23em;
+    background-size: cover;
+    width: 100%;
+    border-radius: 0.4em;
+}
+
+.bg1{
+    background: url(../images/riyadii_preview.png);
+    grid-column: 1 / 4;
+}
+
+.bg2{
+    background: url(../images/signup_preview_1.png);
+    grid-column: 3 / 6;
+}
+
+.bg3{
+    background: url(../images/background.png);
+    grid-column: 1 / 4;    
+}
+
+
+.text1{    grid-column: 4 / 6;  }
+.text2{    grid-column: 1 / 3;  }
+
 .footer{    
     display: flex;    
     position: relative;    
@@ -408,6 +443,29 @@ text-align: center;
     margin: 0 auto;
 }
 
+.carousel_container{
+    /* background: lightgreen; */
+    overflow: hidden;
+    height: 80%;
+    position: relative;    
+    /* display: grid; */
+}
+
+.carousel_track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;    
+}
+
+.carousel_slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
 
 .carousel_card {
     width: 100%;
@@ -431,7 +489,7 @@ text-align: center;
 .left { left: 0; }
 .right { 
     right: 0; 
-    padding: 1em 0;
+    padding: 1em;
 }
 
 .carousel_image{
@@ -490,30 +548,6 @@ text-align: center;
 }
 .tech-used i{
     margin-right:0.3em;
-}
-
-.carousel_container{
-    /* background: lightgreen; */
-    overflow: hidden;
-    height: 80%;
-    position: relative;
-    /* border-radius: 15px; */
-}
-
-.carousel_track{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-    transition: transform 250ms ease-in;    
-}
-
-.carousel_slide{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
 }
 
 .carousel_btn{
@@ -576,7 +610,7 @@ text-align: center;
 }
 
 .copyright{
-    font-size: 0.6em;
+    font-size: 0.75em;
     display: flex;
     justify-content: center;
 }
@@ -675,8 +709,7 @@ text-align: center;
 @media screen and (min-width: 1200px) {  
 
 .main-container{    
-    padding-left: 3.5em;
-    padding-right: 3.5em;
+    padding: 0 3.5em;    
 }
 
 .intro {
