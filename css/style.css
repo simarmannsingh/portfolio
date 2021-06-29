@@ -22,9 +22,9 @@ html, body {
   font-family: Helvetica;
 }
 
-body *{
-	/* transition: 0.3s; */
-}
+/* body *{
+	transition: 0.3s;
+} */
 
 h1, h2, h3, h4, h5, h6, strong {
   color: var(--mainText);
@@ -52,9 +52,9 @@ h6 { font-size: 16px;} */
 .sec1, .sec2 {    
     background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
-    padding: 2em;
+    padding: 1em 1.8em;
 }
 
 .sec2 {
@@ -363,7 +363,9 @@ text-align: center;
     grid-template-areas:
         "bg_1   bg_1   bg_1   text_1  text_1 "
         "text_2   text_2   bg_2   bg_2    bg_2"
-        "bg_3   bg_3   bg_3   text_3   text_3";
+        "bg_3   bg_3   bg_3   text_3   text_3"
+        "text_4   text_4   bg_4   bg_4    bg_4"
+        "bg_5   bg_5   bg_5   text_5   text_5";
 }
 
 .design1 > div{
@@ -392,16 +394,30 @@ text-align: center;
     grid-area: bg_3;
 }
 
+.bg4{
+    background: url(../images/GatsbyTheme.png);
+    grid-area: bg_4;
+}
+
+.bg5{
+    background: url(../images/binaryoats.png);
+    grid-area: bg_5;
+}
+
 .bg1:hover, 
 .bg2:hover, 
-.bg3:hover {
+.bg3:hover,
+.bg4:hover,
+.bg5:hover {
     transform: scale(1.015);
 }
 
 
 .text1{    grid-area: text_1;  }
-.text2{    grid-area: text_2;;  }
-.text3{    grid-area: text_3;;  }
+.text2{    grid-area: text_2;  }
+.text3{    grid-area: text_3;  }
+.text4{    grid-area: text_4;  }
+.text5{    grid-area: text_5;  }
 
 
 .footer{    
@@ -719,11 +735,11 @@ text-align: center;
     }
        
     .carousel_btn-left{
-        left: -4em;
+        left: -3em;
     }
     
     .carousel_btn-right{
-        right: -4em;
+        right: -3em;
     }
 
     .design1{
@@ -735,7 +751,11 @@ text-align: center;
             "text_2"
             "bg_2"
             "text_3"
-            "bg_3";
+            "bg_3"
+            "text_4"
+            "bg_4"
+            "text_5"
+            "bg_5";
     }
 
     .design1 > div{
@@ -745,7 +765,9 @@ text-align: center;
 
     .design1 > div:nth-of-type(1),
     .design1 > div:nth-of-type(4),
-    .design1 > div:nth-of-type(5)
+    .design1 > div:nth-of-type(5),
+    .design1 > div:nth-of-type(8),
+    .design1 > div:nth-of-type(9)
     {
         background-size: contain;
         background-repeat: no-repeat;
@@ -856,11 +878,11 @@ text-align: center;
     }
        
     .carousel_btn-left{
-        left: -4em;
+        left: -3em;
     }
     
     .carousel_btn-right{
-        right: -4em;
+        right: -3em;
     }
 
     .design1{
@@ -873,7 +895,11 @@ text-align: center;
             "text_2"
             "bg_2"
             "text_3"
-            "bg_3";
+            "bg_3"
+            "text_4"
+            "bg_4"
+            "text_5"
+            "bg_5";
     }
 
     .design1 > div{
@@ -883,7 +909,9 @@ text-align: center;
 
     .design1 > div:nth-of-type(1),
     .design1 > div:nth-of-type(4),
-    .design1 > div:nth-of-type(5)
+    .design1 > div:nth-of-type(5),
+    .design1 > div:nth-of-type(8),
+    .design1 > div:nth-of-type(9)
     {
         background-size: contain;
         background-repeat: no-repeat;
@@ -925,7 +953,9 @@ text-align: center;
 
     .design1 > div:nth-of-type(1),
     .design1 > div:nth-of-type(4),
-    .design1 > div:nth-of-type(5)
+    .design1 > div:nth-of-type(5),
+    .design1 > div:nth-of-type(8),
+    .design1 > div:nth-of-type(9)
     {        
         height: 15em;
     }
@@ -942,7 +972,9 @@ text-align: center;
 
     .design1 > div:nth-of-type(1),
     .design1 > div:nth-of-type(4),
-    .design1 > div:nth-of-type(5)
+    .design1 > div:nth-of-type(5),
+    .design1 > div:nth-of-type(8),
+    .design1 > div:nth-of-type(9)
     {        
         height: 20em;
     }
@@ -1004,7 +1036,9 @@ text-align: center;
         grid-template-areas:
             "bg_1   bg_1   bg_1   text_1  text_1 "
             "text_2   text_2   bg_2   bg_2    bg_2"
-            "bg_3   bg_3   bg_3   text_3   text_3";
+            "bg_3   bg_3   bg_3   text_3   text_3"
+            "text_4   text_4   bg_4   bg_4    bg_4"
+            "bg_5   bg_5   bg_5   text_5   text_5";
     }
 
     .design1 > div{
@@ -1015,7 +1049,9 @@ text-align: center;
 
     .design1 > div:nth-of-type(1),
     .design1 > div:nth-of-type(4),
-    .design1 > div:nth-of-type(5)
+    .design1 > div:nth-of-type(5),
+    .design1 > div:nth-of-type(8),
+    .design1 > div:nth-of-type(9)
     {        
         height: 15em;
     }
@@ -1105,7 +1141,9 @@ text-align: center;
         grid-template-areas:
             "bg_1   bg_1   bg_1   text_1  text_1 "
             "text_2   text_2   bg_2   bg_2    bg_2"
-            "bg_3   bg_3   bg_3   text_3   text_3";
+            "bg_3   bg_3   bg_3   text_3   text_3"
+            "text_4   text_4   bg_4   bg_4    bg_4"
+            "bg_5   bg_5   bg_5   text_5   text_5";
     }
 
     .design1 > div{
@@ -1116,7 +1154,9 @@ text-align: center;
 
     .design1 > div:nth-of-type(1),
     .design1 > div:nth-of-type(4),
-    .design1 > div:nth-of-type(5)
+    .design1 > div:nth-of-type(5),
+    .design1 > div:nth-of-type(8),
+    .design1 > div:nth-of-type(9)
     {        
         height: 20em;
     }
